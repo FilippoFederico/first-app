@@ -3,14 +3,71 @@
 }
 .home_page{
     border: 1px solid pink;
+    width: 100%;
+    height: 100%;
+}
+.icon_head{
+    width: 60px;
+    height: 60px;
+    background-color: pink;
+}
+.header{
+    width: 100%;
+    height: 60px;
 }
 .restaurant_page{
     border: 1px solid red;
     margin-top: 5px;
+    width: 100%;
+    height: 100%;
 }
 .review_page{
     border: 1px solid blue;
     margin-top: 5px;
+    width: 100%;
+    height: 100%;
+}
+#menu_page{
+    color: white;
+}
+.menu_list{
+    width: 375px;
+    height: 667px;
+    border: 1px solid green;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 30px;
+    background-color: green;
+    text-transform: uppercase;
+    color: white;
+}
+.btn_menu_top{
+    width: 100%;
+    height: 25%;
+    border: 2px solid white;
+}
+.btn_menu_bottom{
+    width: 51%;
+    height: 50%;
+    border: 2px solid white;
+    
+}
+.top_menu{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.bottom_menu{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    
 }
 
 .show_img{

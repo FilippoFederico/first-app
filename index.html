@@ -8,13 +8,23 @@
 </header>
 
 <body class="body">
-    <div class="home_page">
-        <p>home</p>
-        <div class="header">logo + icona + main menù</div>
-        <div class="menu_bar">menù</div>
+    <div id="home" class="home_page">
+
+        <div class="header">
+        <div class="div_icon">
+            <img class="icon_head" src="img_174839.png" alt="Logo">
+        </div>
+        <div class="div_icon">
+            <img class="icon_head" src="img_202755.png" alt="Login">
+        </div>
+        <div class="div_icon">
+            
+            <a href="#menu_page"><img class="icon_head" src="52152.png" alt="Menu icon"></a>
+        </div>
+        </div>
         <div class="filters">
             <select class="select_city">
-               <option value="select">Select the city</option>
+                <option value="select">Select the city</option>
                 <option value="new_york">New York</option>
                 <option value="miami">Miami</option>
                 <option value="las_vegas">Las Vegas</option>
@@ -28,11 +38,40 @@
         <div class="show_img"></div>
         <div class="footer">arrow back + btn + arrow top</div>
     </div>
+
     <div class="restaurant_page">
         <p>restaurant</p>
     </div>
+
     <div class="review_page">
         <p>review</p>
+    </div>
+
+    <div id="menu_page" class="menu_list">
+     
+      <div class="top_menu">
+       <div class="btn_menu_top">
+            <a href="#"><img class="icon_head" src="img_174839.png" alt="Logo"></a>
+        </div>
+        <div class="btn_menu_top">
+            <a href="#">Search</a>
+        </div>
+        <div class="btn_menu_top">
+            <a href="#">Messages</a>
+        </div>
+        <div class="btn_menu_top">
+            <a href="#">Contact</a>
+        </div>
+        </div>
+        
+        <div class="bottom_menu">
+        <div class="btn_menu_bottom">
+            <a href="#">Call a taxi</a>
+        </div>
+        <div class="btn_menu_bottom">
+            <a href="#home">Home</a>
+        </div>
+        </div>
     </div>
 
     <script src="food-app.js"></script>
