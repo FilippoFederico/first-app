@@ -1,12 +1,8 @@
-
-
-
-
-    //new york = 280
-    //los angeles = 281
-    //Las Vegas = 282
-    //Washington DC = 283
-    //miami = 291
+//new york = 280
+//los angeles = 281
+//Las Vegas = 282
+//Washington DC = 283
+//miami = 291
 
 function imageSection(data) {
 
@@ -15,11 +11,12 @@ function imageSection(data) {
 
 
 
-
+    var imgHome = document.querySelector('.show_img');
+    imgHome.innerHTML = ''
 
     for (i = 0; i < restaurantS.length; i++) {
 
-        var imgHome = document.querySelector('.show_img');
+        
         //        console.log(imgHome)
         var restaurantData = restaurantS[i].restaurant;
         //    console.log(restaurantData)
@@ -29,49 +26,72 @@ function imageSection(data) {
         console.log(restaurantName)
 
 
+        
         var imgDiv = document.createElement('div');
         imgDiv.setAttribute('class', 'boxes_img card text-white');
-        imgHome.appendChild(imgDiv);
-
+        
         var linkImg = document.createElement('img');
         //    console.log(linkImg);
+        
         linkImg.setAttribute('class', 'imgs_class');
 
         linkImg.setAttribute('src', immLink);
-        imgDiv.appendChild(linkImg);
+        
         var divTextImg = document.createElement('div');
+        
         divTextImg.setAttribute('class', 'card-img-overlay');
-        imgDiv.appendChild(divTextImg);
+        
         var textImg = document.createElement('p');
         textImg.setAttribute('class', 'card-text rest_name');
-        divTextImg.appendChild(textImg);
+        
         textImg.innerHTML = restaurantName;
+        
+        divTextImg.appendChild(textImg);
+        
+        
+        imgDiv.appendChild(divTextImg);
+        
+        imgDiv.appendChild(linkImg);
 
+        
+        imgHome.appendChild(imgDiv);
 
         console.log();
     }
 }
 
+
+
 var filterSelect = document.querySelector('.select_city');
 console.log(filterSelect)
 filterSelect.addEventListener('change', function () {
-    console.log('in onchange')
+    //    console.log('in onchange')
+
     var options = filterSelect.querySelector('option');
-//    var count = options.length;
-//    console.log(options)
+    //    var count = options.length;
+    //    console.log(options)
+
+
     if (filterSelect.value == 'new_york') {
-        console.log('new york')
         fetchData('280')
-    } else if(filterSelect.value == 'los_angeles'){
+
+
+    } else if (filterSelect.value == 'los_angeles') {
         fetchData('281')
-    } else if(filterSelect.value == 'miami'){
+    } else if (filterSelect.value == 'miami') {
         fetchData('291')
-    } else if(filterSelect.value == 'las_vegas'){
+    } else if (filterSelect.value == 'las_vegas') {
         fetchData('282')
-    } else if(filterSelect.value == 'washington'){
+    } else if (filterSelect.value == 'washington') {
         fetchData('283')
+    } else if (filterSelect.value == 'select') {
+        
+    
+        
     }
 })
+
+
 
 function fetchData(id) {
     const url = 'https://developers.zomato.com/api/v2.1/search?entity_id=' + id + '&entity_type=city&count=50';
