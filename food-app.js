@@ -16,53 +16,60 @@ function imageSection(data) {
 
     for (i = 0; i < restaurantS.length; i++) {
 
-        
+
         //        console.log(imgHome)
         var restaurantData = restaurantS[i].restaurant;
-        //    console.log(restaurantData)
-        var immLink = restaurantS[i].restaurant.featured_image;
-
-        var restaurantName = restaurantData.name;
-        console.log(restaurantName)
-
-
+            
+        var restaurantsId = restaurantS[i].restaurant.id;
+//        console.log(restaurantsId)
         
+        var immLink = restaurantS[i].restaurant.featured_image;
+//        console.log(immLink)
+        
+        var restaurantName = restaurantData.name;
+        
+
+
+
         var imgDiv = document.createElement('div');
         imgDiv.setAttribute('class', 'boxes_img card text-white');
-        
+
         var linkImg = document.createElement('img');
         //    console.log(linkImg);
-        
+
         linkImg.setAttribute('class', 'imgs_class');
 
         linkImg.setAttribute('src', immLink);
+        linkImg.setAttribute('data-id', restaurantsId)
         
+
         var divTextImg = document.createElement('div');
-        
+
         divTextImg.setAttribute('class', 'card-img-overlay');
-        
+
         var textImg = document.createElement('p');
         textImg.setAttribute('class', 'card-text rest_name');
         
+
         textImg.innerHTML = restaurantName;
-        
+
         divTextImg.appendChild(textImg);
-        
-        
+
+
         imgDiv.appendChild(divTextImg);
-        
+
         imgDiv.appendChild(linkImg);
 
-        
-        imgHome.appendChild(imgDiv);
 
-        console.log();
+        imgHome.appendChild(imgDiv);
+console.log(imgDiv)
+        
     }
 }
 
 
 
-var filterSelect = document.querySelector('.select_city');
+var filterSelect = document.querySelector('#select_city');
 console.log(filterSelect)
 filterSelect.addEventListener('change', function () {
     //    console.log('in onchange')
@@ -85,9 +92,9 @@ filterSelect.addEventListener('change', function () {
     } else if (filterSelect.value == 'washington') {
         fetchData('283')
     } else if (filterSelect.value == 'select') {
-        
-    
-        
+
+
+
     }
 })
 
@@ -122,3 +129,25 @@ function fetchData(id) {
         .catch(err => console.log(err));
 
 }
+
+var clickOnImg = document.querySelector('.btn_on_image');
+console.log(clickOnImg)
+//clickOnImg.innerHTML = 'ciao'
+//clickOnImg.addEventListener('click', displayInfo());
+//
+//
+//function displayInfo() {
+//  document.querySelector('.btn_on_image').innerHTML = 'ciaociao';
+//}
+
+function hideShowMenu(){
+    
+    var x = document.querySelector('.mn_home');
+    if(x.style.display==="none"){
+        x.style.display="block";
+    } else{
+        x.style.display="none";
+    }
+    
+}
+hideShowMenu()

@@ -15,15 +15,30 @@
                 <img class="icon_head" src="log.png" alt="Logo">
             </div>
             <div class="div_icon">
-                <img class="icon_head" src="img_202755.png" alt="Login">
+                <img class="icon_head login" src="add-user-xxl.png" alt="Login">
             </div>
+            
             <div class="div_icon">
 
-                <a href="#menu_page"><img class="icon_head" src="52152.png" alt="Menu icon"></a>
+                <a href="#menu_page"><img class="icon_head btn_home" src="menu.png" alt="Menu icon" onclick="hideShowMenu()"></a>
+            </div>
+
+            <div class="dropdown mn_home">
+                
+                <div id="menu_el" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <img src="a24690cf-5960-47f2-81d6-0c2482e3f6e4_200x200.png" alt="Logo" class="item_logo">
+                    <a class="item_top" href="#">Info</a>
+                    <a class="item_top" href="#">Chat</a>
+                    <a class="item_top" href="#">Contact</a>
+                    <div class="btns_bottom">
+                        <a class="item_bottom" href="#">Call a taxi</a>
+                        <a class="item_bottom" href="#">Home</a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="filters">
-            <select class="select_city">
+            <select id="select_city" class="search">
                 <option value="select">Select the city</option>
                 <option value="new_york">New York</option>
                 <option value="miami">Miami</option>
@@ -32,69 +47,69 @@
                 <option value="los_angeles">Los Angeles</option>
             </select>
             <!--            <input type="text" placeholder="City..." class="input_city">-->
-            <input type="text" placeholder="Restaurant..." class="input_rest">
-            <input type="text" placeholder="Rating..." class="input_reting">
+            <input type="text" placeholder="Restaurant..." class="input_rest search" value="">
+            <input type="text" placeholder="Rating..." class="input_reting search">
         </div>
         <div class="show_img"><img src="a24690cf-5960-47f2-81d6-0c2482e3f6e4_200x200.png" alt="Logo" class="logo_home"></div>
-        <div class="footer">
-        
-        <div class="header">
-            <div class="btn_back">
-                <button>Back</button>
-            </div>
-            <div class="btn_chat">
-                <button>Chat</button>
-            </div>
-            <div class="div_icon">
 
-                <a href="#menu_page"><img class="icon_head" src="img_401809.png" alt="Menu icon" href="#header"></a>
-            </div>
-        </div>
-        
-        </div>
     </div>
 
     <div class="restaurant_page">
-        <div class="nav_intern">
-            <nav class="nav_rest">
-                <a href="/html/">Description</a> 
-                <a href="/css/">Menù</a> 
-                <a href="/js/">Map</a> 
-                <a href="/jquery/">Book</a>
-            </nav>
-        </div>
-        <div class="info_rest">
-            <h4>Restaurant name</h4>
-            <img src="CEFriesThumb18.jpg" alt="" class="img_rest_page">
-            <p>Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione. È sopravvissuto non solo a più di cinque secoli, ma anche al passaggio alla videoimpaginazione, pervenendoci sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la diffusione dei fogli di caratteri trasferibili “Letraset”, che contenevano passaggi del Lorem Ipsum, e più recentemente da software di impaginazione come Aldus PageMaker, che includeva versioni del Lorem Ipsum.</p>
-        </div>
-        
-        <div class="footer">
-        
-        <div class="header">
-            <div class="btn_back">
-                <button>Back</button>
+
+        <div class="header" id="header">
+            <div class="div_icon">
+                <img class="icon_head" src="log.png" alt="Logo">
             </div>
-            <div class="btn_chat">
-                <button>Chat</button>
+            <div class="div_icon">
+                <img class="icon_head login" src="add-user-xxl.png" alt="Login">
             </div>
             <div class="div_icon">
 
-                <a href="#menu_page"><img class="icon_head" src="img_401809.png" alt="Menu icon" href="#header"></a>
+                <a href="#"><img class="icon_head btn_home" src="menu.png" alt="Menu icon"></a>
             </div>
         </div>
-        
+        <div class="body_page">
+            <div class="nav_intern">
+                <nav class="nav_rest">
+                    <button class="intern_nav"><a href="/html/">Review</a></button>
+                    <button class="intern_nav"><a href="/css/">Menù</a> </button>
+                    <button class="intern_nav"><a href="/js/">Map</a> </button>
+                    <button class="intern_nav"><a href="/jquery/">Book</a></button>
+                </nav>
+            </div>
+            <div class="info_rest">
+                <h4>Restaurant name</h4>
+                <img src="CEFriesThumb18.jpg" alt="" class="img_rest_page">
+                <p>Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione. </p>
+            </div>
         </div>
-        
+        <div class="footer">
+
+            <div class="header" id="header">
+                <div class="div_icon">
+                    <button>Back</button>
+                </div>
+                <div class="div_icon">
+                    <button>Chat</button>
+                </div>
+                <div class="div_icon">
+
+                    <a href="#"><img class="icon_head" src="img_401809.png" alt="Menu icon" href="#header"></a>
+                </div>
+            </div>
+
+        </div>
+
     </div>
 
-    
 
+
+<!--
     <div id="menu_page" class="menu_list">
 
         <div class="top_menu">
             <div class="btn_menu_top">
-                <a href="#"><img class="icon_head" src="img_174839.png" alt="Logo"></a>
+                <a href="#"><img class="icon_head" src="a24690cf-5960-47f2-81d6-0c2482e3f6e4_200x200.png" alt="Logo"></a>
             </div>
             <div class="btn_menu_top">
                 <a href="#">Search</a>
@@ -116,6 +131,7 @@
             </div>
         </div>
     </div>
+-->
 
     <script src="food-app.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
