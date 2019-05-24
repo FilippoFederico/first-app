@@ -2,20 +2,31 @@
     background-color: papayawhip;
 }
 
-.home_page {
-    border: 1px solid pink;
+.main_home{
     width: 100%;
-    height: 667px;
+/*    height: 667px;*/
+    
 }
 
-#home {}
+.header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    background-color: deeppink;
+    padding: 5px;
+    
+}
+#home {
+    width: 100%;
+    height: 90%;
+}
 
 .div_icon {
     width: 33%;
     display: flex;
     justify-content: center;
     font-size: 20px;
-    color: white;
 }
 
 .icon_head {
@@ -28,14 +39,7 @@
     background-color: white;
 }
 
-.header {
-    width: 100%;
-    height: 10%;
-    display: flex;
-    justify-content: space-between;
-    background-color: deeppink;
-    padding: 5px;
-}
+
 
 .footer {
     width: 100%;
@@ -50,14 +54,32 @@
     border: 1px solid red;
     margin-top: 5px;
     width: 100%;
-    height: 667px;
+    height: 100%;
     margin: auto;
+    
+  
 
+}
+
+.body_page{
+    border: 1px solid red;
+    margin-top: 5px;
+    width: 100%;
+    height: 90%;
+    margin: auto;   
+    
+}
+
+.map_page {
+    width: 100%;
+    height: 80%;
+    
 }
 
 .img_rest_page {
     width: 70%;
-
+    height: 80%;
+    display: none;
 }
 
 .review_page {
@@ -67,9 +89,7 @@
     height: 100%;
 }
 
-#menu_page {
-    color: white;
-}
+
 
 .menu_list {
     width: 100%;
@@ -82,7 +102,7 @@
     font-size: 30px;
     background-color: papayawhip;
     text-transform: uppercase;
-    color: white;
+    
 }
 
 .btn_menu_top {
@@ -121,13 +141,13 @@
 
 .show_img {
     width: 96%;
-    height: 667px;
+    height: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    align-content: flex-start;
 
 }
 
@@ -150,6 +170,7 @@
 .boxes_img {
     width: 50%;
     height: 130px;
+    margin-bottom: 5px;
 }
 
 .imgs_class {
@@ -179,19 +200,20 @@
 .nav_rest {
     width: 100%;
     margin-top: 10px;
-    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .intern_nav {
-    width: 24%;
+    width: 49.4%;
+    height: 60px;
+    margin: auto;
     background-color: deeppink;
-    color: white;
+    
+    box-shadow: 1px 1px 5px grey;
 }
 
-.body_page {
-    width: 100%;
-    height: 80%;
-}
+
 
 .btn_on_image {
     background-color: white;
@@ -228,12 +250,18 @@
     flex-wrap: wrap;
     
 }
+/*
 .item_bottom{
     width: 50%;
     border: 1px solid beige;
     background-color: deeppink;
     box-shadow: 0px 1px 5px #aaaaaa;
-    color: white;
+    
+}
+*/
+#info_map, #map_info{
+    border: 1px solid deeppink;
+    background-color: papayawhip;
 }
 .item_logo{
     width: 35%;
@@ -242,3 +270,18 @@
     margin-bottom: -20px;
     
 }
+.img_detail{
+    width: 98%;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 1%;
+}
+.name_detail, .name_d{
+    margin-bottom: 20px;
+    
+}
+.det{
+    margin-left: 15px;
+}
+

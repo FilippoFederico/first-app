@@ -8,8 +8,7 @@
 </header>
 
 <body class="body">
-    <div id="home" class="home_page">
-
+    <div class="main_home">
         <div class="header" id="header">
             <div class="div_icon">
                 <img class="icon_head" src="log.png" alt="Logo">
@@ -17,121 +16,128 @@
             <div class="div_icon">
                 <img class="icon_head login" src="add-user-xxl.png" alt="Login">
             </div>
-            
-            <div class="div_icon">
 
-                <a href="#menu_page"><img class="icon_head btn_home" src="menu.png" alt="Menu icon" onclick="hideShowMenu()"></a>
-            </div>
+            <div class="dropdown div_icon">
 
-            <div class="dropdown mn_home">
-                
+                <a href="#" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="icon_head btn_home" src="menu.png" alt="Menu icon" onclick="hideShowMenu()"></a>
+
+
+                <!--            <div class="dropdown mn_home">-->
+
+                <!--
                 <div id="menu_el" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <img src="a24690cf-5960-47f2-81d6-0c2482e3f6e4_200x200.png" alt="Logo" class="item_logo">
-                    <a class="item_top" href="#">Info</a>
-                    <a class="item_top" href="#">Chat</a>
-                    <a class="item_top" href="#">Contact</a>
-                    <div class="btns_bottom">
-                        <a class="item_bottom" href="#">Call a taxi</a>
-                        <a class="item_bottom" href="#">Home</a>
-                    </div>
+                    <a class="dropdown-item item_top" href="#">Home</a>
+                    <a class="dropdown-item item_top" href="#">Chat</a>
+                    <a class="dropdown-item item_top" href="#">Contact</a>
+
                 </div>
+-->
+                <!--            </div>-->
             </div>
         </div>
-        <div class="filters">
-            <select id="select_city" class="search">
-                <option value="select">Select the city</option>
-                <option value="new_york">New York</option>
-                <option value="miami">Miami</option>
-                <option value="las_vegas">Las Vegas</option>
-                <option value="washington">Washington DC</option>
-                <option value="los_angeles">Los Angeles</option>
-            </select>
-            <!--            <input type="text" placeholder="City..." class="input_city">-->
-            <input type="text" placeholder="Restaurant..." class="input_rest search" value="">
-            <input type="text" placeholder="Rating..." class="input_reting search">
-        </div>
-        <div class="show_img"><img src="a24690cf-5960-47f2-81d6-0c2482e3f6e4_200x200.png" alt="Logo" class="logo_home"></div>
 
+
+        <div id="home" class="home_page">
+
+            <div class="filters">
+                <select id="select_city" class="search">
+                    <option value="select">Select the city</option>
+                    <option value="new_york">New York</option>
+                    <option value="miami">Miami</option>
+                    <option value="las_vegas">Las Vegas</option>
+                    <option value="washington">Washington DC</option>
+                    <option value="los_angeles">Los Angeles</option>
+                </select>
+                <!--            <input type="text" placeholder="City..." class="input_city">-->
+                <input type="text" placeholder="Restaurant..." class="input_rest search" value="">
+                <input type="text" placeholder="Rating..." class="input_reting search">
+            </div>
+            <div class="show_img"><img src="a24690cf-5960-47f2-81d6-0c2482e3f6e4_200x200.png" alt="Logo" class="logo_home"></div>
+
+        </div>
     </div>
 
     <div class="restaurant_page">
 
-        <div class="header" id="header">
-            <div class="div_icon">
-                <img class="icon_head" src="log.png" alt="Logo">
-            </div>
-            <div class="div_icon">
-                <img class="icon_head login" src="add-user-xxl.png" alt="Login">
-            </div>
-            <div class="div_icon">
 
-                <a href="#"><img class="icon_head btn_home" src="menu.png" alt="Menu icon"></a>
-            </div>
-        </div>
         <div class="body_page">
             <div class="nav_intern">
                 <nav class="nav_rest">
-                    <button class="intern_nav"><a href="/html/">Review</a></button>
-                    <button class="intern_nav"><a href="/css/">Menù</a> </button>
-                    <button class="intern_nav"><a href="/js/">Map</a> </button>
-                    <button class="intern_nav"><a href="/jquery/">Book</a></button>
+                    <button id="info_info" class="intern_nav">Info</button>
+
+                    <button id="map_info" class="intern_nav" onclick="hideShowMapBtn()">Map</button>
+
                 </nav>
             </div>
             <div class="info_rest">
-                <h4>Restaurant name</h4>
-                <img src="CEFriesThumb18.jpg" alt="" class="img_rest_page">
-                <p>Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione. </p>
+
+                <img class="img_detail" alt="img">
+                <h5 class="name_detail det">Restaurant name</h5>
+                <p class="cuisines_detail det">Cuisine</p>
+                <p class="locality_detail det">Locality</p>
+                <p class="rate_detail det">Rate</p>
+                <p class="text_detail det">Locality</p>
+
+            </div>
+            <div class="footer">
+
+                <div class="header" id="header">
+                    <div class="div_icon">
+                        <button>Back</button>
+                    </div>
+                    <div class="div_icon">
+                        <button>Chat</button>
+                    </div>
+                    <div class="div_icon">
+
+                        <a href="#"><img class="icon_head" src="img_401809.png" alt="Menu icon" href="#header"></a>
+                    </div>
+                </div>
+
             </div>
         </div>
-        <div class="footer">
 
-            <div class="header" id="header">
-                <div class="div_icon">
-                    <button>Back</button>
-                </div>
-                <div class="div_icon">
-                    <button>Chat</button>
-                </div>
-                <div class="div_icon">
+        <div class="map_page">
+            <div class="nav_intern">
+                <nav class="nav_rest">
+                    <button id="info_map" class="intern_nav">Info</button>
 
-                    <a href="#"><img class="icon_head" src="img_401809.png" alt="Menu icon" href="#header"></a>
-                </div>
+                    <button id="map_map" class="intern_nav">Map</button>
+
+                </nav>
             </div>
+            <div class="info_rest">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19418.055536783475!2d13.3885914!3d52.5287852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sit!2sde!4v1558536003820!5m2!1sit!2sde" class="img_detail" frameborder="0" style="border:0" allowfullscreen></iframe>
 
+                <h5 class="name_d det">Restaurant name</h5>
+                <p class="address_detail det">Address</p>
+                <p class="local_detail det">Locality</p>
+
+
+            </div>
+            <div class="footer">
+
+                <div class="header" id="header">
+                    <div class="div_icon">
+                        <button>Back</button>
+                    </div>
+                    <div class="div_icon">
+                        <button>Chat</button>
+                    </div>
+                    <div class="div_icon">
+
+                        <a href="#"><img class="icon_head" src="img_401809.png" alt="Menu icon" href="#header"></a>
+                    </div>
+                </div>
+
+            </div>
         </div>
+
+
 
     </div>
 
-
-
-<!--
-    <div id="menu_page" class="menu_list">
-
-        <div class="top_menu">
-            <div class="btn_menu_top">
-                <a href="#"><img class="icon_head" src="a24690cf-5960-47f2-81d6-0c2482e3f6e4_200x200.png" alt="Logo"></a>
-            </div>
-            <div class="btn_menu_top">
-                <a href="#">Search</a>
-            </div>
-            <div class="btn_menu_top">
-                <a href="#">Messages</a>
-            </div>
-            <div class="btn_menu_top">
-                <a href="#">Contact</a>
-            </div>
-        </div>
-
-        <div class="bottom_menu">
-            <div class="btn_menu_bottom">
-                <a href="#">Call a taxi</a>
-            </div>
-            <div class="btn_menu_bottom">
-                <a href="#home">Home</a>
-            </div>
-        </div>
-    </div>
--->
 
     <script src="food-app.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
